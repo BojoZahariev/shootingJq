@@ -3,8 +3,7 @@ $(document).ready(function() {
     $(this).hide();
 
     setTimeout(() => {
-      $(this).css('left', randomIntFromInterval(0, 1000) + 'px');
-      $(this).css('top', randomIntFromInterval(0, 800) + 'px');
+      $(this).css({ top: randomIntFromInterval(0, 800) + 'px', left: randomIntFromInterval(0, 1000) + 'px' });
       $(this).show();
     }, 2000);
   });
