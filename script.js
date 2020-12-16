@@ -5,7 +5,7 @@ $(document).ready(function() {
     setTimeout(() => {
       $(this).css({ top: randomIntFromInterval(0, 800) + 'px', left: randomIntFromInterval(0, 1000) + 'px' });
       $(this).show();
-    }, 2000);
+    }, 1000);
   });
 });
 
