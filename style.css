@@ -2,9 +2,11 @@
   cursor: url(images/cross.png), auto;
   height: 100vh;
   background-color: antiquewhite;
+  position: relative;
 }
 
 #t1 {
+  position: absolute;
   width: 100px;
   height: 100px;
   background-color: aqua;
