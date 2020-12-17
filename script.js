@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  $('#t1').click(function() {
+  $('#t1').click(function(e) {
+    var posX = e.pageX - $(this).offset().left;
+    var posY = e.pageY - $(this).offset().top;
+
+    console.log(posX, posY);
+
     $(this).hide();
 
     setTimeout(() => {
@@ -14,9 +19,3 @@ const randomIntFromInterval = (min, max) => {
   // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
-
-$(document).ready(function() {
-  $('#mainContainer').click(function(e) {
-    console.log(e.clientX, e.clientY);
-  });
-});
