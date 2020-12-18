@@ -11,3 +11,11 @@
   height: 80px;
   background-color: #667c7c;
 }
+
+#hole {
+  position: absolute;
+  background-color: #222;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
