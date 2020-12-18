@@ -4,10 +4,15 @@ $(document).ready(function() {
     var posY = e.pageY - $(this).offset().top;
 
     console.log(posX, posY);
+    $('#hole').css({ left: posX, top: posY });
 
-    $(this).hide();
-
+    /*
     setTimeout(() => {
+      $(this).hide();
+    }, 1000);
+     */
+    setTimeout(() => {
+      $(this).hide();
       $(this).css({ top: randomIntFromInterval(40, $(document).height() - 50) + 'px', left: randomIntFromInterval(40, $(document).width() - 50) + 'px' });
       $(this).show();
     }, 1000);
