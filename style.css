@@ -14,6 +14,7 @@
 
 #hole {
   position: absolute;
+  display: none;
   background-color: #222;
   width: 10px;
   height: 10px;

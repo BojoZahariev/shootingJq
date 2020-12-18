@@ -3,19 +3,15 @@ $(document).ready(function() {
     var posX = e.pageX - $(this).offset().left;
     var posY = e.pageY - $(this).offset().top;
 
-    console.log(posX, posY);
+    $('#hole').show();
     $('#hole').css({ left: posX, top: posY });
 
-    /*
     setTimeout(() => {
       $(this).hide();
-    }, 1000);
-     */
-    setTimeout(() => {
-      $(this).hide();
-      $(this).css({ top: randomIntFromInterval(40, $(document).height() - 50) + 'px', left: randomIntFromInterval(40, $(document).width() - 50) + 'px' });
+      $('#hole').hide();
+      $(this).css({ top: randomIntFromInterval(40, $(document).height() - 80) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
       $(this).show();
-    }, 1000);
+    }, 500);
   });
 });
 
