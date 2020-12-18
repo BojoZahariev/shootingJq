@@ -1,8 +1,9 @@
 .main {
-  cursor: url(images/cross.png) 35 35, auto;
+  cursor: url(images/cross2.png) 35 35, auto;
   height: 100vh;
   background-color: antiquewhite;
   position: relative;
+  overflow: hidden;
 }
 
 #t1 {
