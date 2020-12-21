@@ -3,6 +3,7 @@ $(document).ready(function() {
     var posX = e.pageX - $(this).offset().left;
     var posY = e.pageY - $(this).offset().top;
 
+    playSound();
     $('#hole').show();
     $('#hole').css({ left: posX, top: posY });
 
@@ -19,4 +20,13 @@ $(document).ready(function() {
 const randomIntFromInterval = (min, max) => {
   // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+const playSound = () => {
+  let sound1 = document.getElementById('gun');
+  
+  
+    sound1.play();
+
+   
 };
