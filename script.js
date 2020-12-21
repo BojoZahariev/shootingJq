@@ -3,7 +3,7 @@ $(document).ready(function() {
     var posX = e.pageX - $(this).offset().left;
     var posY = e.pageY - $(this).offset().top;
 
-    playSound();
+    $('#gun')[0].play();
     $('#hole').show();
     $('#hole').css({ left: posX, top: posY });
 
