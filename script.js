@@ -8,6 +8,8 @@ $(document).ready(function() {
     $('#hole').css({ left: posX, top: posY });
 
     setTimeout(() => {
+      $('#gun')[0].pause()
+      $('#gun')[0].currentTime = 0;
       $(this).hide();
       $('#hole').hide();
       $(this).css({ top: randomIntFromInterval(40, $(document).height() - 80) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
