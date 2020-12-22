@@ -23,6 +23,12 @@ $(document).ready(function() {
   });
 });
 
+
+$('#cartridges').click(function(e) {
+  $('#cartridges .cart').addClass("show");
+  $('#cartridges .cart').show();
+});
+
 //random number
 const randomIntFromInterval = (min, max) => {
   // min and max included
