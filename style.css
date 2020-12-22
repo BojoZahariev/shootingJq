@@ -21,3 +21,14 @@
   height: 10px;
   border-radius: 50%;
 }
+
+.cartridge {
+  position: absolute;
+  bottom: 0;
+}
+
+.cart {
+  height: 50px;
+  width: 10px;
+  background-color: #222;
+}
