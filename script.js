@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('#gun')[0].play();
     $('#hole').show();
     $('#hole').css({ left: posX, top: posY });
+    $('#cartridges p:last').remove()
 
     setTimeout(() => {
       $('#gun')[0].pause()
