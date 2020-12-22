@@ -6,7 +6,11 @@ $(document).ready(function() {
     $('#gun')[0].play();
     $('#hole').show();
     $('#hole').css({ left: posX, top: posY });
-    $('#cartridges p:last').remove()
+   
+    $('#cartridges .show:last').addClass("hide");
+    $('#cartridges .show:last').removeClass("show");
+    $('#cartridges .hide:last').hide();
+    $('#cartridges .hide:last').removeClass("hide");
 
     setTimeout(() => {
       $('#gun')[0].pause()
