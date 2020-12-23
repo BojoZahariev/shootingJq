@@ -28,15 +28,17 @@ $(document).ready(function() {
       $(this).show();
     }, 500);
    }else{
-     $('#text').text('Click to reload');
+  
+    $("#cartridges").append($("<p id='reloadText'></p>").text('Click to reload')); 
+
    }
   });
 
 });
 
-
+//Reload
 $('#cartridges').click(function(e) {
-  $('#text').text('')
+  $('#reloadText').remove();
   $('#cartridges .cart').addClass("show");
   $('#cartridges .cart').show();
 });
