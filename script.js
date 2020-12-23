@@ -2,13 +2,11 @@
 
 $(document).ready(function() {
 
-
   $('#t1').click(function(e) {
 
+    //checks if there are cartridges
     if($("#cartridges p").hasClass("show")) {
      
-    
-
     var posX = e.pageX - $(this).offset().left;
     var posY = e.pageY - $(this).offset().top;
 
@@ -29,13 +27,16 @@ $(document).ready(function() {
       $(this).css({ top: randomIntFromInterval(40, $(document).height() - 80) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
       $(this).show();
     }, 500);
-  }
+   }else{
+     $('#text').text('Click to reload');
+   }
   });
 
 });
 
 
 $('#cartridges').click(function(e) {
+  $('#text').text('')
   $('#cartridges .cart').addClass("show");
   $('#cartridges .cart').show();
 });
