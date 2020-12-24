@@ -22,7 +22,7 @@ $(document).ready(function () {
         $(this).css({ top: randomIntFromInterval(40, $(document).height() - 80) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
         $(this).show();
       }, 200);
-    } else {
+    } else if ($('#reloadText').length === 0) {
       $('#cartridges').append($("<p id='reloadText'></p>").text('Click to reload'));
     }
   });
