@@ -28,7 +28,7 @@ $(document).ready(function() {
       $(this).show();
     }, 500);
    }else{
-  
+
     $("#cartridges").append($("<p id='reloadText'></p>").text('Click to reload')); 
 
    }
