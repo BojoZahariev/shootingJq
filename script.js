@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('#t1').click(function (e) {
     //checks if there are cartridges
-    if ($('#cartridges p').hasClass('show')) {
+    if ($('#cartridges img').hasClass('show')) {
       var posX = e.pageX - $(this).offset().left;
       var posY = e.pageY - $(this).offset().top;
 

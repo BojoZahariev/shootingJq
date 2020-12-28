@@ -27,11 +27,9 @@
   bottom: 0;
   border: 1px solid #222;
   width: 230px;
-  height: 80px;
+  min-height: 100px;
 }
 
 .cart {
-  height: 50px;
-  background-color: #222;
-  border: 1px solid #fff;
+  width: 40px;
 }
