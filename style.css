@@ -37,5 +37,5 @@
 
 .flip {
   transform: rotate(90deg);
-  transform-origin: bottom;
+  transform-origin: 60% bottom;
 }
