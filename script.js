@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $('#t1').click(function (e) {
-    //checks if there are cartridges
+  $('#target').click(function (e) {
+    //checks if there are cartridges left
     if ($('#cartridges img').hasClass('show')) {
       var posX = e.pageX - $(this).offset().left;
       var posY = e.pageY - $(this).offset().top;
@@ -16,7 +16,7 @@ $(document).ready(function () {
         $('#gun')[0].currentTime = 0;
         $(this).hide();
         $('#hole').hide();
-        $(this).css({ top: randomIntFromInterval(40, $(document).height() - 80) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
+        $(this).css({ top: randomIntFromInterval(40, $(document).height() - 120) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
         $(this).show();
       }, 400);
     } else if ($('#reloadText').length === 0) {
@@ -25,6 +25,7 @@ $(document).ready(function () {
   });
 });
 
+//cartridges add / remove
 const cartridgesFlow=()=> {
   $('#cartridges .show:last').addClass('hide');
   $('#cartridges .show:last').removeClass('show');

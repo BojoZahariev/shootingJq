@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-#t1 {
+#target {
   position: absolute;
   width: 50px;
   height: 100px;
