@@ -9,9 +9,12 @@ $(document).ready(function () {
       $('#hole').show();
       $('#hole').css({ left: posX, top: posY });
 
+      $(this).toggleClass('flip');
+
      cartridgesFlow();
 
       setTimeout(() => {
+        $(this).toggleClass('flip');
         $('#gun')[0].pause();
         $('#gun')[0].currentTime = 0;
         $(this).hide();
