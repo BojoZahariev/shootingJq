@@ -34,8 +34,3 @@
 .cart {
   width: 40px;
 }
-
-.flip {
-  transform: rotate(90deg);
-  transform-origin: 60% bottom;
-}
