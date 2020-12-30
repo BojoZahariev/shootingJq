@@ -10,6 +10,8 @@ $(document).ready(function () {
       $('#gun')[0].play();
       $('#hole').show();
       $('#hole').css({ left: posX, top: posY });
+      score +=1
+      $('#scoreText').text(score)
   
 
      cartridgesFlow();
