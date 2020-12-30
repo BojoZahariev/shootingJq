@@ -1,3 +1,5 @@
+let score = 0;
+
 $(document).ready(function () {
   $('#target').click(function (e) {
     //checks if there are cartridges left
@@ -8,13 +10,12 @@ $(document).ready(function () {
       $('#gun')[0].play();
       $('#hole').show();
       $('#hole').css({ left: posX, top: posY });
-
-      
+  
 
      cartridgesFlow();
 
       setTimeout(() => {
-        
+    
         $('#gun')[0].pause();
         $('#gun')[0].currentTime = 0;
         $(this).hide();
