@@ -22,7 +22,7 @@ $(document).ready(function () {
         $('#gun')[0].currentTime = 0;
         $(this).hide();
         $('#hole').hide();
-        $(this).css({ top: randomIntFromInterval(40, $(document).height() - 120) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
+        $(this).css({ top: randomIntFromInterval(40, $(document).height() - 200) + 'px', left: randomIntFromInterval(40, $(document).width() - 80) + 'px' });
         $(this).show();
       }, 400);
     } else if ($('#reloadText').length === 0) {
