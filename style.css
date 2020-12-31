@@ -8,10 +8,10 @@
 
 #target {
   position: absolute;
-  width: 50px;
+  width: 100px;
   height: 100px;
 
-  background-image: url(images/coke.png);
+  background-image: url(images/target.png);
   background-size: cover;
 }
 
